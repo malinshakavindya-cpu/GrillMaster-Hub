@@ -1,0 +1,57 @@
+.h1{
+font-size: 56px;
+
+}
+
+
+.container-fluid m-2{
+
+    background-color: aqua;
+}
+.header_left_side {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header_left_side img {
+    width: 20%;
+    height: 10%;
+}
+
+.header_left_side label{
+    font-size: 40px;
+    font-family: Gutter_Rust_Italic;
+    color: #dee2e6;
+}
+
+.page_logo_div {}
+
+.header_right_side {
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+}
+
+.header_right_side input{
+    cursor: text;
+    border-radius: 0.2rem;
+    margin-right: 25px;
+    border: none;
+    outline: none;
+    background-color: #ced4da;
+    color: #343a40;
+    font-size: 20px;
+    border-bottom: 1px #54525200 solid;
+}
+
+.display_box {
+    display: flex;
+}
+.all img{
+width: 300px;
+  height: 300px;
+
+}
