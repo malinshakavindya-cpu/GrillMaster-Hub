@@ -51,7 +51,25 @@ font-size: 56px;
     display: flex;
 }
 .all img{
-width: 300px;
-  height: 300px;
+width: 400px;
+  height: 400px;
 
 }
+.body style img{
+
+    width: 3000px;
+  height: 3000px;
+}
+
+
+   . body {
+      background-image: url("assets/img/new\ \(2\).png");
+
+      
+      background-size: cover;       /* fills the entire page */
+      background-repeat: no-repeat; /* prevents tiling */
+      background-position: 0dvb;  /* centers the image */
+      margin: 0;
+      height: 100vh;                /* full viewport height */
+    }
+ 
