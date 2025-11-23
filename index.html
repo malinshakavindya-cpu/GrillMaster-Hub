@@ -16,17 +16,17 @@
             margin: 0;
             padding: 0;
             height: 100vh;
-            /* full viewport height */
+
             background-image: url("assets/img/home\ page.png");
-            /* update with correct filename */
+
             background-size: cover;
-            /* scales image to fill screen */
+
             background-repeat: no-repeat;
-            /* prevents tiling */
+
             background-position: center;
-            /* centers the image */
+
             background-attachment: fixed;
-            /* keeps image in place while scrolling */
+
         }
     </style>
 </head>
@@ -40,29 +40,32 @@
     <div class="container py-3">
         <header>
             <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"> <a href="/"
-                    class="d-flex align-items-center link-body-emphasis text-decoration-none"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="40" height="32" class="me-2" viewBox="0 0 118 94"
-                        role="img">
-                        <title>Fries</title>
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h18.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"
-                            fill="currentColor"></path>
-                    </svg> <span class="fs-4">Pricing example</span> </a>
-                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a
-                        class="me-3 py-2 link-body-emphasis text-decoration-none" href="home.html">Home</a> <a
-                        class="me-3 py-2 link-body-emphasis text-decoration-none" href="drinks.html">Drinks</a> <a
-                        class="me-3 py-2 link-body-emphasis text-decoration-none" href="fries.html">Fries</a> <a
-                        class="py-2 link-body-emphasis text-decoration-none" href="burgers.html">Burgers</a> </nav>
-            </div>
-            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                <h1 class="display-4 fw-normal text-body-emphasis"> Welcome Grill Master Hub</h1>
+                    class="d-flex align-items-center link-body-emphasis text-decoration-none">
+                    <div class="logo">
+                        <div>
+                            <a href="index.html"> <img src="assets/img/Grill master.png" alt="logo"
+                                    style="width:200px; height:200px; border-radius:25%; object-fit:fill;"></av>
+                                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a
+                                        class="me-3 py-2 link-body-emphasis text-decoration-none"
+                                        href="home.html">Home</a> <a
+                                        class="me-3 py-2 link-body-emphasis text-decoration-none"
+                                        href="drinks.html">Drinks</a> <a
+                                        class="me-3 py-2 link-body-emphasis text-decoration-none"
+                                        href="fries.html">Fries</a> <a
+                                        class="py-2 link-body-emphasis text-decoration-none"
+                                        href="burgers.html">Burgers</a> </nav>
+                        </div>
+                        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                            <h1 class="display-4 fw-normal text-body-emphasis"> Welcome Grill Master Hub</h1>
 
-                <img src="assets/img/chef.jpg" alt="">
-                <p class="fs-5 text-body-secondary"> Quench your thirst with our refreshing selection of drinks — from
-                    ice-cold sodas and creamy shakes to energizing juices and classic bottled water. Whether you're
-                    pairing with a burger or just cooling off, we've got the perfect sip waiting for you.
-                    Pick your favorite and enjoy the chill! </p>
-            </div>
+                            <img src="assets/img/chef.jpg" alt="">
+                            <p class="fs-5 text-body-secondary"> Quench your thirst with our refreshing selection of
+                                drinks — from
+                                ice-cold sodas and creamy shakes to energizing juices and classic bottled water. Whether
+                                you're
+                                pairing with a burger or just cooling off, we've got the perfect sip waiting for you.
+                                Pick your favorite and enjoy the chill! </p>
+                        </div>
 
         </header>
         <main>
@@ -82,7 +85,8 @@
                             <img src="assets/img/burger 3 ham cheezy fried.png" alt="">
 
                             <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">+ Add
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a
+                                    href="burgers.html">Buy here</a>
                             </button>
                         </div>
                     </div>
@@ -98,14 +102,15 @@
 
                             <img src="assets/img/burger 5 chicken barbaque.png" alt="">
                             <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Buy here</button>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="burgers.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary">
                         <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">🍸 3. Specialty & Packaged Drinks
+                            <h4 class="my-0 fw-normal">Black cheezy chicken Burger
                             </h4>
                         </div>
                         <div class="card-body">
@@ -113,10 +118,11 @@
 
                             <img src="assets/img/burger 4 spacial black chicken.png" alt="">
 
-                            <li>Rs.200</li>
-                            
+                            <li>Rs.600</li>
 
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Buy here</button>
+
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="burgers.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
@@ -127,13 +133,14 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Cola</h4>
+                            <h4 class="my-0 fw-normal">Ice-Coffee</h4>
                         </div>
                         <div class="card-body">
 
                             <img src="assets/img/Cold-Coffee-ice.jpg" alt="">
-                            <li>Rs.250</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Add to cart
+                            <li>Rs.350</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a
+                                    href="drinks.html">Buy here</a>
                             </button>
                         </div>
                     </div>
@@ -146,8 +153,9 @@
                         <div class="card-body">
 
                             <img src="assets/img/Orangejuice.jpg" alt="">
-                            <li>Rs.150</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            <li>Rs.220</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="drinks.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
@@ -160,7 +168,8 @@
 
                             <img src="assets/img/cool 2 ice tea.jpg" alt="">
                             <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="drinks.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
@@ -171,38 +180,40 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Free</h4>
+                            <h4 class="my-0 fw-normal">Crispy chips with onion rings</h4>
                         </div>
                         <div class="card-body">
 
 
                             <img src="assets/img/f-combo rings with chips.png" alt="">
 
-                            <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
-                                free</button>
+                            <li>Rs.450</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a
+                                    href="fries.html">Buy here</a>
+                            </button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
+                            <h4 class="my-0 fw-normal">Waffle cut fries</h4>
                         </div>
                         <div class="card-body">
 
 
                             <img src="assets/img/f-waffle cut fries.jpg" alt="">
-                            <li>Rs.200</li>
+                            <li>Rs.300</li>
 
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="fries.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary">
                         <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                            <h4 class="my-0 fw-normal">French fries</h4>
                         </div>
                         <div class="card-body">
 
@@ -210,8 +221,9 @@
 
                             <img src="assets/img/f-2 french fries.png" alt="">
 
-                            <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            <li>Rs.300</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="fries.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
@@ -221,16 +233,17 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Free</h4>
+                            <h4 class="my-0 fw-normal">Onion rings with Drumsticks</h4>
                         </div>
                         <div class="card-body">
 
 
                             <img src="assets/img/f-combo pack.png" alt="">
 
-                            <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for
-                                free</button>
+                            <li>Rs.500</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-outline-primary"><a
+                                    href="burgers.html">Buy here</a>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -239,29 +252,31 @@
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm">
                         <div class="card-header py-3">
-                            <h4 class="my-0 fw-normal">Pro</h4>
+                            <h4 class="my-0 fw-normal">Double chicken potato Burger</h4>
                         </div>
                         <div class="card-body">
 
 
                             <img src="assets/img/burger package 2.png" alt="">
 
-                            <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+                            <li>Rs.1000</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="burgers.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card mb-4 rounded-3 shadow-sm border-primary">
                         <div class="card-header py-3 text-bg-primary border-primary">
-                            <h4 class="my-0 fw-normal">Enterprise</h4>
+                            <h4 class="my-0 fw-normal">Cheeze Burger with french fries</h4>
                         </div>
                         <div class="card-body">
 
                             <img src="assets/img/burger packge 5.png" alt="">
 
-                            <li>Rs.200</li>
-                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+                            <li>Rs.800</li>
+                            </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a href="burgers.html">Buy
+                                    here</a></button>
                         </div>
                     </div>
                 </div>

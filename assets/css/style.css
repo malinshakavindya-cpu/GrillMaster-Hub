@@ -102,3 +102,88 @@ font-size: 78px !important;
 
 
     }
+
+  .d-flex{
+
+font-size: 30px;
+
+font-style: normal;
+ color: #00ff37 !important;
+
+  }
+.w-100{
+font-size: 30px;
+
+font-style: normal;
+ color: #00ff37 !important;
+background-color: #00ff37;
+
+}
+.fw-normal{
+
+    font-size: 30px;
+
+font-style: normal;
+ color: #cdb6d3 !important;
+background-color: #2f5037;
+}
+.my-0{
+ font-size: 30px;
+
+font-style: normal;
+ color: #f3f2f3 !important;
+background-color:#0046FF ;
+font-palette: inherit;
+
+
+}
+.justify-content-end{
+
+    color: #eec4ee ;
+}
+.text-body-secondary{
+font-size: 30px;
+
+font-style: normal;
+ color: #f3f2f3 !important;
+
+font-palette: inherit;
+
+
+}
+.logo-img {
+  width: 120px;          /* adjust size */
+  height: 120px;         /* keep equal width & height */
+  border-radius: 50%;    /* makes it round */
+  object-fit: cover;     /* ensures image fills the circle */
+}
+
+
+
+.h1{
+font-size: 10px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+
+
+.h2{
+font-size: 100px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+
+.h3{
+font-size: 100px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+.h4{
+font-size: 100px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
