@@ -4,267 +4,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <title>GrillMaster Hub</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap + Animate.css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/burgers.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+    <!-- Background -->
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background: url("assets/img/Screenshot 2025-11-23 114313.png") center center / cover no-repeat fixed;
+        }
+
+        .logo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 25%;
+            object-fit: cover;
+        }
+    </style>
 </head>
 
-<style>
-    body {
-        margin: 0;
-        padding: 0;
-        height: 100vh;
-
-        background-image: url("assets/img/Screenshot\ 2025-11-23\ 114313.png");
-
-        background-size: cover;
-
-        background-repeat: no-repeat;
-
-        background-position: center;
-
-        background-attachment: fixed;
-
-    }
-</style>
-</head>
-</body>
-
-
-<div class="all">
+<body>
     <div class="container py-3">
 
-        <header>
-            <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"> <a href="/"
-                    class="d-flex align-items-center link-body-emphasis text-decoration-none">
-                    <div class="logo">
-                        <div>
-                            <a href="index.html"> <img src="assets/img/Grill master.png" alt="logo"
-                                    style="width:200px; height:200px; border-radius:25%; object-fit:fill;"></av>
-                                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a
-                                        class="me-3 py-2 link-body-emphasis text-decoration-none"
-                                        href="index.html">Home</a> <a
-                                        class="me-3 py-2 link-body-emphasis text-decoration-none"
-                                        href="drinks.html">Drinks</a> <a
-                                        class="me-3 py-2 link-body-emphasis text-decoration-none"
-                                        href="fries.html">Fries</a> <a
-                                        class="py-2 link-body-emphasis text-decoration-none"
-                                        href="burgers.html">Burgers</a> </nav>
-                        </div>
-                        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-                            <h1 class="display-4 fw-normal text-body-emphasis"> Burger Zone</h1>
-                            <p class="fs-5 text-body-secondary"> Welcome to Burger Zone – Home of Cheezy, Spicy, and
-                                Juicy Burgers! Grab a bite, feel the flavor, and enjoy every crunch.
+        <!-- Header -->
+        <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+            <!-- Logo -->
+            <a href="index.html" class="logo me-md-auto mb-3 mb-md-0">
+                <img src="assets/img/Grill master.png" alt="Grill Master Logo"
+                    class="img-fluid animate__animated animate__fadeInDown">
+            </a>
 
-                                </h2>
-
-
-                            </p>
-                        </div>
+            <!-- Navigation -->
+            <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="index.html">Home</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="drinks.html">Drinks</a>
+                <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="fries.html">Fries</a>
+                <a class="py-2 link-body-emphasis text-decoration-none" href="burgers.html">Burgers</a>
+            </nav>
         </header>
-        //
 
-        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+        <!-- Intro Section -->
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+            <h1 class="display-4 fw-normal text-body-emphasis animate__animated animate__fadeInDown">Burger Zone</h1>
+            <p class="fs-5 text-body-secondary animate__animated animate__fadeInUp">
+                Welcome to Burger Zone – Home of Cheezy, Spicy, and Juicy Burgers!
+                Grab a bite, feel the flavor, and enjoy every crunch.
+            </p>
+        </div>
 
-            <!-- 1. Crunchy BBQ Burger -->
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Crunchy BBQ Burger – smoky sauce with crispy onions</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger 2 pork chezy.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.600</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
+    </div>
 
-            <!-- 2. Spicy Inferno Burger -->
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger 3 ham cheezy fried.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.500</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 3. Spicy Inferno Burger (Black Chicken) -->
-            <div class="col">
-                <div
-                    class="card mb-4 rounded-3 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
-                    <div class="card-header py-3 text-bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger 4 spacial black chicken.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.1100</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 4. Spicy Inferno Burger (Barbecue) -->
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger 5 chicken barbaque.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.1000</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 5. Ocean Fish Burger -->
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Ocean Fish Burger – crispy fish fillet with tartar</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger 8black fresh meat.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.900</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 6. Spicy Inferno Burger (Package 2) -->
-            <div class="col">
-                <div
-                    class="card mb-4 rounded-3 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
-                    <div class="card-header py-3 text-bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger package 2.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.1500</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 7. Monster Cheddar Burger -->
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Monster Cheddar Burger – extra-large with triple cheese</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger package 4.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.700</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 8. Ocean Fish Burger (Package 5) -->
-            <div class="col">
-                <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
-                    <div class="card-header py-3">
-                        <h4 class="my-0 fw-normal">Ocean Fish Burger – crispy fish fillet with tartar</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger packge 5.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.850</span></b></li>
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
-                            <a href="checkout.html">🛒ADD</a>
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- 9. Spicy Inferno Burger (Package 1) -->
-            <div class="col">
-                <div
-                    class="card mb-4 rounded-3 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
-                    <div class="card-header py-3 text-bg-primary border-primary">
-                        <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
-                    </div>
-                    <div class="card-body">
-                        <img src="assets/img/burger package1.png" alt=""
-                            class="img-fluid animate__animated animate__zoomIn">
-                        <li><b><span style="font-size:30px;">Rs.1800</span></b></li>
-                        <!-- Proper button that navigates to checkout.html -->
-                        <button type="button"
-                            class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
-                            onclick="location.href='checkout.html'">
-                            🛒ADD
-                        </button>
-
-
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- Footer -->
-
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-body-secondary">© 2025 Grill Restaurant Gallface Road, Colombo</p>
-                <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="fries.html" class="nav-link px-2 text-body-secondary">Fries</a></li>
-                    <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-body-secondary">Drinks</a></li>
-                    <li class="nav-item"><a href="burgers.html" class="nav-link px-2 text-body-secondary">Burgers</a>
-                    </li>
-                    <li class="nav-item"><a href="checkout.html" class="nav-link px-2 text-body-secondary">Checkout</a>
-                    </li>
-                </ul>
-            </footer>
-
-
-
-            <script src="assets/js/burgers.js"></script>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
-
-            </body>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 
 </html>
+//
+
+<div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+    <!-- 1. Crunchy BBQ Burger -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Crunchy BBQ Burger – smoky sauce with crispy onions</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger 2 pork chezy.png" alt=""
+                    class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.600</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Spicy Inferno Burger -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger 3 ham cheezy fried.png" alt=""
+                    class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.500</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. Spicy Inferno Burger (Black Chicken) -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger 4 spacial black chicken.png" alt=""
+                    class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.1100</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. Spicy Inferno Burger (Barbecue) -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger 5 chicken barbaque.png" alt=""
+                    class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.1000</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 5. Ocean Fish Burger -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Ocean Fish Burger – crispy fish fillet with tartar</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger 8black fresh meat.png" alt=""
+                    class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.900</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 6. Spicy Inferno Burger (Package 2) -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger package 2.png" alt="" class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.1500</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 7. Monster Cheddar Burger -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Monster Cheddar Burger – extra-large with triple cheese</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger package 4.png" alt="" class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.700</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 8. Ocean Fish Burger (Package 5) -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+            <div class="card-header py-3">
+                <h4 class="my-0 fw-normal">Ocean Fish Burger – crispy fish fillet with tartar</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger packge 5.png" alt="" class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.850</span></b></li>
+                <button type="button"
+                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite">
+                    <a href="checkout.html">🛒ADD</a>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 9. Spicy Inferno Burger (Package 1) -->
+    <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
+            <div class="card-header py-3 text-bg-primary border-primary">
+                <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot chili kick</h4>
+            </div>
+            <div class="card-body">
+                <img src="assets/img/burger package1.png" alt="" class="img-fluid animate__animated animate__zoomIn">
+                <li><b><span style="font-size:30px;">Rs.1800</span></b></li>
+                <!-- Proper button that navigates to checkout.html -->
+                <button type="button"
+                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                    onclick="location.href='checkout.html'">
+                    🛒ADD
+                </button>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Footer -->
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <p class="col-md-4 mb-0 text-body-secondary">© 2025 Grill Restaurant Gallface Road, Colombo</p>
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="fries.html" class="nav-link px-2 text-body-secondary">Fries</a></li>
+            <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-body-secondary">Drinks</a></li>
+            <li class="nav-item"><a href="burgers.html" class="nav-link px-2 text-body-secondary">Burgers</a>
+            </li>
+            <li class="nav-item"><a href="checkout.html" class="nav-link px-2 text-body-secondary">Checkout</a>
+            </li>
+        </ul>
+    </footer>
+
+
+
+    <script src="assets/js/burgers.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    </body>
+
+    </html>
