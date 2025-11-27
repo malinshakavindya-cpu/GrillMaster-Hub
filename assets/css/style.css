@@ -179,6 +179,7 @@ background-color: #b5da76;
 
 .h3{
 font-size: 100px;
+
 font-family: fantasy;
 background-color: #b5da76;
 
@@ -188,6 +189,12 @@ font-size: 100px;
 font-family: fantasy;
 background-color: #b5da76;
 
+}
+
+.display-5{
+background-color: #3e5e06;
+color: #330633 !important;
+    font-style: oblique;
 }
 
 
