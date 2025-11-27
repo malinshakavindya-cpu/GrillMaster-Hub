@@ -119,14 +119,16 @@ font-style: normal;
 background-color: #00ff37;
 
 }
-.fw-normal{
 
-    font-size: 30px;
 
-font-style: normal;
- color: #cdb6d3 !important;
-background-color: #2f5037;
+/* styles.css */
+.h4-fw-normal {
+  font-size: 30px !important;
+  font-style: normal;
+  color: #cdb6d3 !important;
+  background-color: #2f5037;
 }
+
 .my-0{
  font-size: 30px;
 
