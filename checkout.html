@@ -2,1013 +2,607 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/checkout.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            
+            background-image: url("assets/img/black.png");
+           
+            background-size: cover;
+            
+            background-repeat: no-repeat;
+          
+            background-position: center;
+           background-attachment: fixed;
+        }
+    </style>
+
 
 </head>
 
 <body>
 
-    <div class="all">
-        <div class="all-1">
-            <div class="container py-3">
+  <div class="all">
+    <div class="all-1">
+      <div class="container py-3">
 
 
-                <header>
-                    <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom"> <a href="/"
-                            class="d-flex align-items-center link-body-emphasis text-decoration-none">
-                            <div class="logo">
-                                <div>
-                                    <a href="index.html"> <img src="assets/img/Grill master.png" alt="logo"
-                                            style="width:200px; height:200px; border-radius:25%; object-fit:fill;"></av>
-                                        <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto"> <a
-                                                class="me-3 py-2 link-body-emphasis text-decoration-none"
-                                                href="index.html">Home</a> <a
-                                                class="me-3 py-2 link-body-emphasis text-decoration-none"
-                                                href="drinks.html">Drinks</a> <a
-                                                class="me-3 py-2 link-body-emphasis text-decoration-none"
-                                                href="fries.html">Fries</a> <a
-                                                class="py-2 link-body-emphasis text-decoration-none"
-                                                href="burgers.html">Burgers</a> </nav>
+       
+        </header>
+        <div class="container-fluid cotainerMY">
+          <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
+            <div>
+              <p class="text-uppercase text-secondary small mb-1"
+                style="font-family: 'Indie Flower', cursive;font-size: 30px;">Takeaway Orders</p>
+              <p class="text-muted mb-0">Build orders for pickup and to-go customers</p>
+            </div>
+          </div>
+
+          <div class="row g-4">
+            <div class="col-lg-8">
+              <div class="card shadow-sm border-0 mb-4">
+                <div class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
+                  <strong>Menu Selection</strong>
+                  <div class="btn-group btn-group-sm" role="group">
+                    <button class="btn btn-outline-secondary active" data-category="all"><a href="checkout.html">All</a></button>
+                    <button class="btn btn-outline-secondary" data-category="burgers"><a href="burgers.html">Burgers</a></button>
+                    <button class="btn btn-outline-secondary" data-category="sides"><a href="drinks.html">Drinks</a></button>
+                    <button class="btn btn-outline-secondary" data-category="drinks"><a href="fries.html">Fries</a></button>
+                  </div>
+                </div>
 
 
-                                </div>
+                <body>
 
-                </header>
+                  <div class="container">
+                    <h1 class="text-center">🍔 Food & Drinks Menu</h1>
 
 
-                <div class="container-fluid cotainerMY">
-                    <div class="d-flex flex-wrap align-items-center gap-3 mb-4">
-                        <div>
-                            <p class="text-uppercase text-secondary small mb-1"
-                                style="font-family: 'Indie Flower', cursive;font-size: 30px;">Takeaway Orders</p>
-                            <p class="text-muted mb-0">Build orders for pickup and to-go customers</p>
+
+                    <!-- Burgers -->
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Crunchy BBQ Burger – smoky sauce with crispy onions</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger 2 pork chezy.png" alt="">
+                            <p class="price">Rs.600</p>
+                            <button class="btn add-to-cart" data-name="Crunchy BBQ Burger" data-price="600">🛒
+                              ADD</button>
+                          </div>
                         </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Spicy Inferno Burger – packed with hot chili kick</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger 3 ham cheezy fried.png" alt="">
+                            <p class="price">Rs.500</p>
+                            <button class="btn add-to-cart" data-name="Spicy Inferno Burger" data-price="500">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Spicy Inferno Burger – packed with hot chili kick</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger 4 spacial black chicken.png" alt="">
+                            <p class="price">Rs.1100</p>
+                            <button class="btn add-to-cart" data-name="Spicy Inferno Burger" data-price="1100">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
-                    <div class="row g-4">
-                        <div class="col-lg-8">
-                            <div class="card shadow-sm border-0 mb-4">
-                                <div
-                                    class="card-header bg-white border-0 d-flex justify-content-between align-items-center">
-                                    <strong>Menu Selection</strong>
-                                    <div class="btn-group btn-group-sm" role="group">
-                                        <button class="btn btn-outline-secondary active"
-                                            data-category="all">All</button>
-                                        <button class="btn btn-outline-secondary"
-                                            data-category="burgers">Burgers</button>
-                                        <button class="btn btn-outline-secondary" data-category="sides">Sides</button>
-                                        <button class="btn btn-outline-secondary" data-category="drinks">Drinks</button>
-                                    </div>
-                                </div>
-
-                                <div class="all">
-
-                                </div>
-
-                                <main>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Crunchy BBQ Burger – smoky sauce with
-                                                        crispy onions
-                                                    </h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger 2 pork chezy.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.600
-                                                        </B></font>
-                                                    </li>
-
-
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot
-                                                        chili kick</h4>
-                                                </div>
-
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger 3 ham cheezy fried.png" alt="">
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.500
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot
-                                                        chili kick
-                                                    </h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger 4 spacial black chicken.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1100
-                                                        </B></font>
-                                                    </li>
-
-                                                    <ul class="list-unstyled mt-3 mb-4">
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal"> Spicy Inferno Burger – packed with hot
-                                                        chili kick </h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/burger 5 chicken barbaque.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1000
-                                                        </B></font>
-                                                    </li>
-
-
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal"> Ocean Fish Burger – crispy fish fillet
-                                                        with tartar
-                                                    </h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger 8black fresh meat.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.900
-                                                        </B></font>
-                                                    </li>
-
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot
-                                                        chili kick </h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <img src="assets/img/burger package 2.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1500
-                                                        </B></font>
-                                                    </li>
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Monster Cheddar Burger – extra-large with
-                                                        triple cheese</h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <img src="assets/img/burger package 4.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.700
-                                                        </B></font>
-                                                    </li>
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Ocean Fish Burger – crispy fish fillet
-                                                        with tartar </h4>
-                                                    </Crunchy>
-                                                    </h4>
-                                                </div>
-                                                <div class="card-body">
-                                                    <img src="assets/img/burger packge 5.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.850
-                                                        </B></font>
-                                                    </li>
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot
-                                                        chili kick
-                                                    </h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger package1.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1800
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Monster Cheddar Burger – extra-large with
-                                                        triple cheese</h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger package 6.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1300
-                                                        </B></font>
-                                                    </li>
-
-
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Ocean Fish Burger – crispy fish fillet
-                                                        with tartar </h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/burger8 fresh chicken garlic mixed.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1100
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"> <a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-
-
-
-
-
-
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Spicy Inferno Burger – packed with hot
-                                                        chili kick
-                                                    </h4>
-                                                </div>
-                                                <div class="card-body">
-
-
-                                                    <img src="assets/img/Burger -add.png" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.1000
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Cola</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/cool 1cola.webp" alt="">
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.200
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Iced-tea</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/cool 2 ice tea.jpg" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.200
-                                                        </B></font>
-                                                    </li>
-
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"> <a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Ice-coffee</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/Cold-Coffee-ice.jpg" alt="">
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.350
-                                                        </B></font>
-                                                    </li>
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"> <a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Orange juice</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/Orangejuice.jpg" alt="">
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.250
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Orange mint lemonade</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/cool orange mint juice.jpg" alt="">
-
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.250
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Watermelon juice</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/watermelon-juice.jpg" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.210
-                                                        </B></font>
-                                                    </li>
-
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"> <a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Watermelon mint lemonade</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/watermelon-mint-lemonade-1.jpg" alt="">
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.200
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button"
-                                                        class="w-100 btn btn-lg btn-outline-primary"><a
-                                                            href="checkout.html">🛒ADD</a>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm">
-                                                <div class="card-header py-3">
-                                                    <h4 class="my-0 fw-normal">Strawberry Milkshake</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/Strawberry-Milkshake-square.jpg" alt="">
-
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.260
-                                                        </B></font>
-                                                    </li>
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"> <a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                <div class="card-header py-3 text-bg-primary border-primary">
-                                                    <h4 class="my-0 fw-normal">Avacado Milkshake</h4>
-                                                </div>
-                                                <div class="card-body">
-
-                                                    <img src="assets/img/cool 4 avacado milkshake.jpg" alt="">
-                                                    <li><B>
-                                                            <font style="font-size: 30px;">Rs.400
-                                                        </B></font>
-                                                    </li>
-
-                                                    </ul> <button type="button" class="w-100 btn btn-lg btn-primary"> <a
-                                                            href="checkout.html">🛒ADD</a> </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-                                    </header>
-                                    <main>
-                                        <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                            <div class="col">
-                                                <div class="card mb-4 rounded-3 shadow-sm">
-                                                    <div class="card-header py-3">
-                                                        <h4 class="my-0 fw-normal">Creamy chocolate milkshake</h4>
-                                                    </div>
-                                                    <div class="card-body">
-
-                                                        <img src="assets/img/cool 5-choco ‎milkshake.png" alt="">
-                                                        <li><B>
-                                                                <font style="font-size: 30px;">Rs.300
-                                                            </B></font>
-                                                        </li>
-                                                        </ul> <button type="button"
-                                                            class="w-100 btn btn-lg btn-outline-primary"><a
-                                                                href="checkout.html">🛒ADD</a>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card mb-4 rounded-3 shadow-sm">
-                                                    <div class="card-header py-3">
-                                                        <h4 class="my-0 fw-normal">Chocolate Ice-cream</h4>
-                                                    </div>
-                                                    <div class="card-body">
-
-                                                        <img src="assets/img/ice creame 2 choco.jpg">
-                                                        <li><B>
-                                                                <font style="font-size: 30px;">Rs.450
-                                                            </B></font>
-                                                        </li>
-                                                        </ul> <button type="button"
-                                                            class="w-100 btn btn-lg btn-primary"><a
-                                                                href="checkout.html">🛒ADD</a>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                    <div class="card-header py-3 text-bg-primary border-primary">
-                                                        <h4 class="my-0 fw-normal">Vanilla Ice-Cream</h4>
-                                                    </div>
-                                                    <div class="card-body">
-
-                                                        <img src="assets/img/ice creame 1 vanilla.jpg" alt="">
-                                                        <li><B>
-                                                                <font style="font-size: 30px;">Rs.270
-                                                            </B></font>
-                                                        </li>
-                                                        </ul> <button type="button"
-                                                            class="w-100 btn btn-lg btn-primary"><a
-                                                                href="checkout.html">🛒ADD</a>
-                                                        </button>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <main>
-                                            <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                                <div class="col">
-                                                    <div class="card mb-4 rounded-3 shadow-sm">
-                                                        <div class="card-header py-3">
-                                                            <h4 class="my-0 fw-normal">Red bull energy drink
-                                                                Drinks
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-body">
-
-
-
-                                                            <img src="assets/img/Energy drink Red bull.avif" alt="">
-                                                            <li><B>
-                                                                    <font style="font-size: 30px;">Rs.480
-                                                                </B></font>
-                                                            </li>
-                                                            </ul> <button type="button"
-                                                                class="w-100 btn btn-lg btn-outline-primary"><a
-                                                                    href="checkout.html">🛒ADD</a> </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col">
-                                                    <div class="card mb-4 rounded-3 shadow-sm">
-                                                        <div class="card-header py-3">
-                                                            <h4 class="my-0 fw-normal">Mocha cappuccino</h4>
-                                                        </div>
-
-                                                        <div class="card-body">
-
-
-                                                            <img src="assets/img/Mocha_Cappuccio_1638022539649_1638022558271.avif"
-                                                                alt="">
-                                                            <li><B>
-                                                                    <font style="font-size: 30px;">Rs.200
-                                                                </B></font>
-                                                            </li>
-
-                                                            </ul> <button type="button"
-                                                                class="w-100 btn btn-lg btn-primary"><a
-                                                                    href="checkout.html">🛒ADD</a>
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-
-                                                <div class="col">
-                                                    <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                                        <div class="card-header py-3 text-bg-primary border-primary">
-                                                            <h4 class="my-0 fw-normal">Highland Milk
-                                                            </h4>
-                                                        </div>
-                                                        <div class="card-body">
-
-
-                                                            <img src="assets/img/water_bottle.png" alt="">
-                                                            <li><B>
-                                                                    <font style="font-size: 30px;">Rs.120
-                                                                </B></font>
-                                                            </li>
-                                                            <ul class="list-unstyled mt-3 mb-4">
-
-                                                            </ul> <button type="button"
-                                                                class="w-100 btn btn-lg btn-primary"><a
-                                                                    href="checkout.html">🛒ADD</a></button>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-
-                            </div class>
-
-                            <main>
-                                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal">Garlic floavored french fries
-                                                </h4>
-                                            </div>
-                                            <div class="card-body">
-
-
-
-                                                <img src="assets/img/f-2 french fries.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button"
-                                                    class="w-100 btn btn-lg btn-outline-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal"> Straight‑Cut Fries</h4>
-                                            </div>
-
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-Air fryer Truffle Fries.jpg" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                            <div class="card-header py-3 text-bg-primary border-primary">
-                                                <h4 class="my-0 fw-normal">Chili Cheese Fries
-                                            </div>
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-cheezy.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-                                                <ul class="list-unstyled mt-3 mb-4">
-
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal">Sweet Potato Fries </h4>
-                                            </div>
-                                            <div class="card-body">
-
-                                                <img src="assets/img/f-garlic butter.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button"
-                                                    class="w-100 btn btn-lg btn-outline-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal"> Masala Fries </h4>
-                                            </div>
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-spicy.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                            <div class="card-header py-3 text-bg-primary border-primary">
-                                                <h4 class="my-0 fw-normal">Waffle cut Fries</h4>
-                                            </div>
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-waffle cut fries.jpg" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal"> Potato rings with spicy chips </h4>
-                                            </div>
-                                            <div class="card-body">
-
-                                                <img src="assets/img/f-o rings.png" alt="">
-
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-                                                </ul> <button type="button"
-                                                    class="w-100 btn btn-lg btn-outline-primary"><a
-                                                        href="checkout.html">🛒ADD</a> </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal">Sweet potato Shoestring Fries </h4>
-                                            </div>
-                                            <div class="card-body">
-
-                                                <img src="assets/img/f-sweet potato.png" alt="">
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                            <div class="card-header py-3 text-bg-primary border-primary">
-                                                <h4 class="my-0 fw-normal">Onion rings with crunchy chips </h4>
-                                            </div>
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-mixed fries.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.200
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary"><a
-                                                        href="checkout.html">🛒ADD</a>
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm">
-                                            <div class="card-header py-3">
-                                                <h4 class="my-0 fw-normal">Potato chips with chicken Drumstics </h4>
-                                            </div>
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-combo pack.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.1500
-                                                    </B></font>
-                                                </li>
-
-
-                                                </ul> <button type="button"
-                                                    class="w-100 btn btn-lg btn-outline-primary"><a
-                                                        href="checkout.html">🛒ADD</a> </button>
-                                            </div>
-                                        </div>
-                                    </div>
-
-
-
-
-
-                                    <div class="col">
-                                        <div class="card mb-4 rounded-3 shadow-sm border-primary">
-                                            <div class="card-header py-3 text-bg-primary border-primary">
-                                                <h4 class="my-0 fw-normal">Hot cheeze gravy potato rings</h4>
-                                            </div>
-                                            <div class="card-body">
-
-
-                                                <img src="assets/img/f-combo rings with chips.png" alt="">
-                                                <li><B>
-                                                        <font style="font-size: 30px;">Rs.400
-                                                    </B></font>
-                                                </li>
-
-                                                </ul> <button type="button" class="w-100 btn btn-lg btn-primary">
-                                                    <a href="checkout.html">🛒ADD</a> </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-
-
-
-                                <div class="all-2">
-                                    <div class="card shadow-sm border-0 sticky-top" style="top: 20px;">
-                                        <div class="card-header bg-warning text-dark border-0">
-                                            <strong>Current Order</strong>
-                                        </div>
-                                        <div class="card-body">
-                                            <form id="orderForm">
-                                                <div class="mb-3">
-                                                    <label for="customerName"
-                                                        class="form-label small fw-semibold">Customer Name</label>
-                                                    <input type="text" class="form-control" id="customerName"
-                                                        placeholder="Enter name" required="">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="customerPhone"
-                                                        class="form-label small fw-semibold">Phone Number</label>
-                                                    <input type="tel" class="form-control" id="customerPhone"
-                                                        placeholder="Enter phone" required="">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="pickupTime" class="form-label small fw-semibold">Pickup
-                                                        Time</label>
-                                                    <select class="form-select" id="pickupTime" required="">
-                                                        <option value="">Select time...</option>
-                                                        <option value="ASAP">ASAP (10-15 mins)</option>
-                                                        <option value="30mins">In 30 minutes</option>
-                                                        <option value="1hour">In 1 hour</option>
-                                                        <option value="custom">Custom time</option>
-                                                    </select>
-                                                </div>
-                                            </form>
-
-                                            <hr>
-
-                                            <div class="mb-3">
-                                                <div class="d-flex justify-content-between align-items-center mb-2">
-                                                    <strong class="small">Order Items</strong>
-                                                    <button class="btn btn-sm btn-outline-danger"
-                                                        id="clearCartBtn">Clear</button>
-                                                </div>
-                                                <div id="cartItems" style="max-height: 300px; overflow-y: auto;">
-                                                    <p class="text-muted text-center py-4 small">Cart is empty</p>
-                                                </div>
-                                            </div>
-                                            <div class="mb-3">
-                                                <div class="d-flex justify-content-between pt-2 border-top">
-                                                    <strong>Total:</strong>
-                                                    <strong class="text-success" id="total">Rs. 0.00</strong>
-                                                </div>
-                                            </div>
-
-                                            <div class="d-grid gap-2">
-                                                <button class="btn btn-success" id="placeOrderBtn">
-                                                    Place Takeaway Order
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Spicy Inferno Burger – packed with hot chili kick</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger 5 chicken barbaque.png" alt="">
+                            <p class="price">Rs.1000</p>
+                            <button class="btn add-to-cart" data-name="Spicy Inferno Burger" data-price="1000">🛒
+                              ADD</button>
+                          </div>
                         </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Ocean Fish Burger – crispy fish fillet with tartar</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger 8black fresh meat.png" alt="">
+                            <p class="price">Rs.900</p>
+                            <button class="btn add-to-cart" data-name="Ocean Fish Burger" data-price="900">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Spicy Inferno Burger – packed with hot chili kick</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger package 2.png" alt="">
+                            <p class="price">Rs.1500</p>
+                            <button class="btn add-to-cart" data-name="Spicy Inferno Burger" data-price="1500">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
                     </div>
 
-                </div class>
-            </div class>
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Monster Cheddar Burger – extra-large with triple cheese</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger package 4.png" alt="">
+                            <p class="price">Rs.700</p>
+                            <button class="btn add-to-cart" data-name="Monster Cheddar Burger" data-price="700">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
 
-            <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-                <p class="col-md-4 mb-0 text-body-secondary">© 2025 Hot Grill Restaurant Gallface Road ,Colombo</p> <a
-                    href="/"
-                    class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
-                    aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Ocean Fish Burger – crispy fish fillet with tartar</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger packge 5.png" alt="">
+                            <p class="price">Rs.850</p>
+                            <button class="btn add-to-cart" data-name="Ocean Fish Burger" data-price="850">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Spicy Inferno Burger – packed with hot chili kick</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger package1.png" alt="">
+                            <p class="price">Rs.1800</p>
+                            <button class="btn add-to-cart" data-name="Spicy Inferno Burger" data-price="1800">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Monster Cheddar Burger – extra-large with triple cheese</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger package 6.png" alt="">
+                            <p class="price">Rs.1300</p>
+                            <button class="btn add-to-cart" data-name="Monster Cheddar Burger" data-price="1300">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Ocean Fish Burger – crispy fish fillet with tartar</div>
+                          <div class="card-body">
+                            <img src="assets/img/burger8 fresh chicken garlic mixed.png" alt="">
+                            <p class="price">Rs.1100</p>
+                            <button class="btn add-to-cart" data-name="Ocean Fish Burger" data-price="1100">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Spicy Inferno Burger – packed with hot chili kick</div>
+                          <div class="card-body">
+                            <img src="assets/img/Burger -add.png" alt="">
+                            <p class="price">Rs.1000</p>
+                            <button class="btn add-to-cart" data-name="Spicy Inferno Burger" data-price="1000">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Drinks -->
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Cola</div>
+                          <div class="card-body">
+                            <img src="assets/img/cool 1cola.webp" alt="">
+                            <p class="price">Rs.200</p>
+                            <button class="btn add-to-cart" data-name="Cola" data-price="200">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Iced-tea</div>
+                          <div class="card-body">
+                            <img src="assets/img/cool 2 ice tea.jpg" alt="">
+                            <p class="price">Rs.200</p>
+                            <button class="btn add-to-cart" data-name="Iced-tea" data-price="200">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Ice-coffee</div>
+                          <div class="card-body">
+                            <img src="assets/img/Cold-Coffee-ice.jpg" alt="">
+                            <p class="price">Rs.350</p>
+                            <button class="btn add-to-cart" data-name="Ice-coffee" data-price="350">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Orange juice</div>
+                          <div class="card-body">
+                            <img src="assets/img/Orangejuice.jpg" alt="">
+                            <p class="price">Rs.250</p>
+                            <button class="btn add-to-cart" data-name="Orange juice" data-price="250">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Orange mint lemonade</div>
+                          <div class="card-body">
+                            <img src="assets/img/cool orange mint juice.jpg" alt="">
+                            <p class="price">Rs.250</p>
+                            <button class="btn add-to-cart" data-name="Orange mint lemonade" data-price="250">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Watermelon juice</div>
+                          <div class="card-body">
+                            <img src="assets/img/watermelon-juice.jpg" alt="">
+                            <p class="price">Rs.210</p>
+                            <button class="btn add-to-cart" data-name="Watermelon juice" data-price="210">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Lemonade & Milkshakes -->
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Watermelon mint lemonade</div>
+                          <div class="card-body">
+                            <img src="assets/img/watermelon-mint-lemonade-1.jpg" alt="">
+                            <p class="price">Rs.200</p>
+                            <button class="btn add-to-cart" data-name="Watermelon mint lemonade" data-price="200">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Strawberry Milkshake</div>
+                          <div class="card-body">
+                            <img src="assets/img/Strawberry-Milkshake-square.jpg" alt="">
+                            <p class="price">Rs.260</p>
+                            <button class="btn add-to-cart" data-name="Strawberry Milkshake" data-price="260">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Avocado Milkshake</div>
+                          <div class="card-body">
+                            <img src="assets/img/cool 4 avacado milkshake.jpg" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Avocado Milkshake" data-price="400">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Creamy chocolate milkshake</div>
+                          <div class="card-body">
+                            <img src="assets/img/cool 5-choco ‎milkshake.png" alt="">
+                            <p class="price">Rs.300</p>
+                            <button class="btn add-to-cart" data-name="Creamy chocolate milkshake" data-price="300">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Ice-creams & Specials -->
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Chocolate Ice-cream</div>
+                          <div class="card-body">
+                            <img src="assets/img/ice creame 2 choco.jpg" alt="">
+                            <p class="price">Rs.450</p>
+                            <button class="btn add-to-cart" data-name="Chocolate Ice-cream" data-price="450">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Vanilla Ice-Cream</div>
+                          <div class="card-body">
+                            <img src="assets/img/ice creame 1 vanilla.jpg" alt="">
+                            <p class="price">Rs.270</p>
+                            <button class="btn add-to-cart" data-name="Vanilla Ice-Cream" data-price="270">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Red Bull Energy Drink</div>
+                          <div class="card-body">
+                            <img src="assets/img/Energy drink Red bull.avif" alt="">
+                            <p class="price">Rs.480</p>
+                            <button class="btn add-to-cart" data-name="Red Bull Energy Drink" data-price="480">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Mocha cappuccino</div>
+                          <div class="card-body">
+                            <img src="assets/img/Mocha_Cappuccio_1638022539649_1638022558271.avif" alt="">
+                            <p class="price">Rs.200</p>
+                            <button class="btn add-to-cart" data-name="Mocha cappuccino" data-price="200">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Highland Milk</div>
+                          <div class="card-body">
+                            <img src="assets/img/Highland.png" alt="">
+                            <p class="price">Rs.120</p>
+                            <button class="btn add-to-cart" data-name="Highland Milk" data-price="120">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Fries & Rings sets -->
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Garlic Flavored French Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-2 french fries.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Garlic Flavored French Fries" data-price="400">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Straight‑Cut Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-Air fryer Truffle Fries.jpg" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Straight‑Cut Fries" data-price="400">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Chili Cheese Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-cheezy.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Chili Cheese Fries" data-price="400">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Sweet Potato Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-garlic butter.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Sweet Potato Fries" data-price="400">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Masala Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-spicy.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Masala Fries" data-price="400">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Waffle cut Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-waffle cut fries.jpg" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Waffle cut Fries" data-price="400">🛒
+                              ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Potato rings with spicy chips</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-o rings.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Potato rings with spicy chips"
+                              data-price="400">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Sweet potato Shoestring Fries</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-sweet potato.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Sweet potato Shoestring Fries"
+                              data-price="400">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Onion rings with crunchy chips</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-mixed fries.png" alt="">
+                            <p class="price">Rs.200</p>
+                            <button class="btn add-to-cart" data-name="Onion rings with crunchy chips"
+                              data-price="200">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Combos -->
+                    <div class="row">
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Potato chips with chicken Drumsticks</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-combo pack.png" alt="">
+                            <p class="price">Rs.1500</p>
+                            <button class="btn add-to-cart" data-name="Potato chips with chicken Drumsticks"
+                              data-price="1500">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="col" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                        <div class="card">
+                          <div class="card-header">Hot cheese gravy potato rings</div>
+                          <div class="card-body">
+                            <img src="assets/img/f-combo rings with chips.png" alt="">
+                            <p class="price">Rs.400</p>
+                            <button class="btn add-to-cart" data-name="Hot cheese gravy potato rings"
+                              data-price="400">🛒 ADD</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Cart Section -->
+                    <div class="cart" data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+                      <h2>🛍️ Current Order</h2>
+                      <form id="orderForm">
+                        <input type="text" id="customerName" placeholder="Customer Name" required>
+                        <input type="tel" id="customerPhone" placeholder="Phone Number" required>
+                        <select id="pickupTime" required>
+                          <option value="">Select time...</option>
+                          <option value="ASAP">ASAP (10-15 mins)</option>
+                          <option value="30mins">In 30 minutes</option>
+                          <option value="1hour">In 1 hour</option>
+                        </select>
+                      </form>
+
+                      <div id="cartItems">
+                        <p class="empty">Cart is empty</p>
+                      </div>
+
+                      <div class="total">
+                        <strong>Total:</strong> <span id="total">Rs. 0.00</span>
+                      </div>
+
+                      <button id="clearCartBtn" class="btn danger">Clear Cart</button>
+                      <button id="placeOrderBtn" class="btn success">Place Takeaway Order</button>
+                    </div>
+                  </div>
+
+
+
+
+
+                  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+                    <p class="col-md-4 mb-0 text-body-secondary">© 2025 Hot Grill Restaurant Gallface Road ,Colombo</p>
+                    <a href="/"
+                      class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+                      aria-label="Bootstrap"> <svg class="bi me-2" width="40" height="32" aria-hidden="true">
                         <use xlink:href="#bootstrap"></use>
-                    </svg> </a>
-                <ul class="nav col-md-4 justify-content-end">
-                    <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
-                    <li class="nav-item"><a href="fries.html" class="nav-link px-2 text-body-secondary">Fries</a></li>
-                    <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-body-secondary">Drinks</a></li>
-                    <li class="nav-item"><a href="burgers.html" class="nav-link px-2 text-body-secondary">Burgers</a>
-                    </li>
-                    <li class="nav-item"><a href="checkout.html" class="nav-link px-2 text-body-secondary">Checkout</a>
-                    </li>
-                </ul>
+                      </svg> </a>
+                    <ul class="nav col-md-4 justify-content-end">
+                      <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                      <li class="nav-item"><a href="fries.html" class="nav-link px-2 text-body-secondary">Fries</a></li>
+                      <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-body-secondary">Drinks</a>
+                      </li>
+                      <li class="nav-item"><a href="burgers.html" class="nav-link px-2 text-body-secondary">Burgers</a>
+                      </li>
+                      <li class="nav-item"><a href="checkout.html"
+                          class="nav-link px-2 text-body-secondary">Checkout</a>
+                      </li>
+                    </ul>
 
 
 
@@ -1016,18 +610,29 @@
 
 
 
+                  </footer>
+
+
+                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+                    crossorigin="anonymous"></script>
+
+
+                  <!-- AOS JS -->
+                  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+                  <script>AOS.init();</script>
+                  <script src="assets/js/cart.js"></script>
+                </body>
+
+</html>
 
 
 
-            </footer>
 
+<script src="https://cdn.tailwindcss.com"></script>
 
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-                integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-                crossorigin="anonymous"></script>
-            <script src="https://cdn.tailwindcss.com"></script>
-
-            <script src="assets/js/app.js"></script>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/burgercart.js"></script>
 </body>
 
 </html>
