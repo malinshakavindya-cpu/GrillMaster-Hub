@@ -1,0 +1,72 @@
+/* General card styling */
+.burger-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+  overflow: hidden;
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* Hover effect for all cards */
+.burger-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Burger images */
+.burger-img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+.burger-img:hover {
+  transform: scale(1.05);
+}
+
+/* Price styling */
+.price {
+  font-size: 28px;
+  color: #dc3545;
+}
+
+/* Add button */
+.add-btn {
+  margin-top: 10px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.add-btn:hover {
+  transform: scale(1.05);
+}
+
+/* Fade-in animation for all cards */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .burger-card {
+    margin-bottom: 20px;
+  }
+  .price {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  h4 {
+    font-size: 18px;
+  }
+  .price {
+    font-size: 20px;
+  }
+}

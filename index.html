@@ -4,19 +4,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GrillMaster</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+
+            background-image: url("assets/img/home\ page.png");
+
+            background-size: cover;
+
+            background-repeat: no-repeat;
+
+            background-position: center;
+
+            background-attachment: fixed;
+
+        }
+    </style>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
 </head>
-<h1>GrillMart</h1>
+
 
 <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+    <div class="all">
+        <div class="container py-3">
+            <!-- Header -->
+            <header class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+                <a href="index.html" class="d-flex align-items-center text-decoration-none me-md-auto mb-3 mb-md-0">
+                    <img src="assets/img/Grill master.png" alt="logo" class="img-fluid"
+                        style="width:120px; height:120px; border-radius:25%; object-fit:cover;">
+                </a>
+                <nav class="d-inline-flex mt-2 mt-md-0 ms-md-auto">
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="index.html">Home</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="drinks.html">Drinks</a>
+                    <a class="me-3 py-2 link-body-emphasis text-decoration-none" href="fries.html">Fries</a>
+                    <a class="py-2 link-body-emphasis text-decoration-none" href="burgers.html">Burgers</a>
+                </nav>
+            </header>
+
+            <!-- Intro -->
+            <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+                <h1 class="display-5 fw-normal text-body-emphasis animate__animated animate__fadeInDown">
+                    Welcome to Grill Master— the home of sizzling flavors and good vibes!
+                </h1>
+                <img src="assets/img/chef.jpg" alt="Chef"
+                    class="img-fluid rounded my-3 animate__animated animate__zoomIn">
+                <ul class="list-unstyled fs-5 text-body-secondary">
+                    <marquee>
+                        <li>🍔 Burgers: Juicy patties stacked with fresh toppings, melty cheese, and soft buns.</li>
+                        <li>🍟 Fries: Crispy, golden, and seasoned to perfection — the ultimate sidekick.</li>
+                        <li>🥤 Drinks: From ice‑cold sodas to creamy shakes and energizing juices.
+                    </marquee>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Popular Burgers -->
+            <main>
+                <!-- Popular Burgers -->
+                <h2 class="text-center mb-4">Popular Burgers</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+                    <!-- Cheezy Chicken Burger -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Cheezy Chicken Spicy Burger</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/burger 3 ham cheezy fried.png" alt="Cheezy Chicken Burger"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.600</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='burgers.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Barbecue Chicken Burger -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Barbecue Chicken Burger</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/burger 5 chicken barbaque.png" alt="Barbecue Chicken Burger"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.1100</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='burgers.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Black Cheezy Chicken Burger -->
+                    <div class="col">
+                        <div
+                            class="card h-100 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Black Cheezy Chicken Burger</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/burger 4 spacial black chicken.png"
+                                    alt="Black Cheezy Chicken Burger"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.1500</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='burgers.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular Drinks -->
+                <h2 class="text-center mt-5 mb-4">Popular Drinks</h2>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+                    <!-- Ice Coffee -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Ice-Coffee</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/Cold-Coffee-ice.jpg" alt="Ice Coffee"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.350</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='drinks.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Orange Juice -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Orange Juice</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/Orangejuice.jpg" alt="Orange Juice"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.250</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='drinks.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Ice Tea -->
+                    <div class="col">
+                        <div
+                            class="card h-100 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">Ice Tea</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/cool 2 ice tea.jpg" alt="Ice Tea"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.200</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='drinks.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popular Fries -->
+                <h3 class="text-center mt-5 mb-4">Popular Fries</h3>
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center">
+                    <!-- Crispy Chips with Onion Rings -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm animate__animated animate__fadeInUp">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Crispy Chips with Onion Rings</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/f-combo rings with chips.png" alt="Crispy Chips with Onion Rings"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.400</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-outline-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='fries.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Waffle Cut Fries -->
+                    <div class="col">
+                        <div class="card h-100 shadow-sm animate__animated animate__fadeInUp animate__delay-1s">
+                            <div class="card-header py-3">
+                                <h4 class="my-0 fw-normal">Waffle Cut Fries</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/f-waffle cut fries.jpg" alt="Waffle Cut Fries"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.500</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='fries.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- French Fries -->
+                    <div class="col">
+                        <div
+                            class="card h-100 shadow-sm border-primary animate__animated animate__fadeInUp animate__delay-2s">
+                            <div class="card-header py-3 text-bg-primary border-primary">
+                                <h4 class="my-0 fw-normal">French Fries</h4>
+                            </div>
+                            <div class="card-body">
+                                <img src="assets/img/f-2 french fries.png" alt="French Fries"
+                                    class="img-fluid animate__animated animate__zoomIn">
+                                <p class="mt-3 fs-4 fw-bold text-danger">Rs.400</p>
+                                <button type="button"
+                                    class="w-100 btn btn-lg btn-primary animate__animated animate__pulse animate__infinite"
+                                    onclick="location.href='fries.html'">Buy Here</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top bg-light">
+            <!-- Left side -->
+            <p class="col-12 col-md-4 mb-0 text-center text-md-start text-body-secondary">
+                © 2025 Grill Restaurant, Gallface Road, Colombo
+            </p>
+
+            <!-- Center (optional logo or brand) -->
+            <div class="col-12 col-md-4 d-flex align-items-center justify-content-center my-3 my-md-0">
+                <img src="assets/img/restaurant-hot-grill-logo-templates-your-bussines-brand-restaurant-hot-grill-logo-templates-167371404.webp"
+                    alt="Grill Master Logo" class="img-fluid" style="width:60px; height:60px; border-radius:50%;">
+            </div>
+
+            <!-- Right side navigation -->
+            <ul class="nav col-12 col-md-4 justify-content-center justify-content-md-end">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+                <li class="nav-item"><a href="fries.html" class="nav-link px-2 text-body-secondary">Fries</a></li>
+                <li class="nav-item"><a href="drinks.html" class="nav-link px-2 text-body-secondary">Drinks</a></li>
+                <li class="nav-item"><a href="burgers.html" class="nav-link px-2 text-body-secondary">Burgers</a></li>
+                <li class="nav-item"><a href="checkout.html" class="nav-link px-2 text-body-secondary">Checkout</a></li>
+            </ul>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

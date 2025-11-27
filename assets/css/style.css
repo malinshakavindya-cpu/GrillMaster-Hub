@@ -1,0 +1,200 @@
+.h1 {
+    font-size: 56px;
+
+}
+
+
+.container-fluid m-2 {
+
+    background-color: aqua;
+}
+
+.header_left_side {
+    display: flex;
+    align-items: center;
+    width: 50%;
+}
+
+.header_left_side img {
+    width: 20%;
+    height: 10%;
+}
+
+.header_left_side label {
+    font-size: 40px;
+    font-family: Gutter_Rust_Italic;
+    color: #dee2e6;
+}
+
+.page_logo_div {}
+
+.header_right_side {
+    width: 50%;
+    height: 15%;
+    display: flex;
+    justify-content: right;
+    align-content: center;
+}
+
+.header_right_side input {
+    cursor: text;
+    border-radius: 0.2rem;
+    margin-right: 25px;
+    border: none;
+    outline: none;
+    background-color: #ced4da;
+    color: #343a40;
+    font-size: 20px;
+    border-bottom: 1px #54525200 solid;
+}
+
+.display_box {
+    display: flex;
+}
+
+.all img {
+    width: 400px;
+    height: 400px;
+
+}
+
+.body style img {
+
+    width: 3000px;
+    height: 3000px;
+}
+/*home page styling*/
+/* For the heading */
+.display-4.fw-normal.text-body-emphasis {
+    font-size: 78px !important;
+    /* optional */
+    color: #ff6600 !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding: 0cqw;
+
+}
+    .fs-5.text-body-secondary {
+        font-size: 50px !important;
+       
+        color: #b5da76 !important;
+        /* example: blue */
+    }
+    .me-3{
+
+ font-size: 78px !important;
+    /* optional */
+    color: #75716e !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding: 0cqw;
+
+
+    }
+    .py-2{
+
+font-size: 78px !important;
+    /* optional */
+    color: #a18977 !important;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: normal;
+    padding: 0cqw;
+
+
+    }
+
+  .d-flex{
+
+font-size: 30px;
+
+font-style: normal;
+ color: #00ff37 !important;
+
+  }
+.w-100{
+font-size: 30px;
+
+font-style: normal;
+ color: #00ff37 !important;
+background-color: #00ff37;
+
+}
+
+
+/* styles.css */
+.h4-fw-normal {
+  font-size: 30px !important;
+  font-style: normal;
+  color: #cdb6d3 !important;
+  background-color: #2f5037;
+}
+
+.my-0{
+ font-size: 30px;
+
+font-style: normal;
+ color: #f3f2f3 !important;
+background-color:#0046FF ;
+font-palette: inherit;
+
+
+}
+.justify-content-end{
+
+    color: #eec4ee ;
+}
+.text-body-secondary{
+font-size: 30px;
+
+font-style: normal;
+ color: #f3f2f3 !important;
+
+font-palette: inherit;
+
+
+}
+.logo-img {
+  width: 120px;          /* adjust size */
+  height: 120px;         /* keep equal width & height */
+  border-radius: 50%;    /* makes it round */
+  object-fit: cover;     /* ensures image fills the circle */
+}
+
+
+
+.h1{
+font-size: 10px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+
+
+.h2{
+font-size: 100px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+
+.h3{
+font-size: 100px;
+
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+.h4{
+font-size: 100px;
+font-family: fantasy;
+background-color: #b5da76;
+
+}
+
+.display-5{
+background-color: #3e5e06;
+color: #330633 !important;
+    font-style: oblique;
+}
+
+
